@@ -1,0 +1,467 @@
+<html>
+<head>
+	<title>CEOS</title>
+	<meta http-equiv="content-type" content="text/html charset=utf-8">
+	<meta http-equiv = "Content-Script-Type" content="text/javascript; charset=utf-8">
+	<meta http-equiv = "Content-Style-Type" content="text/css">
+	<meta charset="utf-8">
+	<!--
+	/**
+	 * @license
+	 * MyFonts Webfont Build ID 3273306, 2016-08-23T04:40:20-0400
+	 * 
+	 * The fonts listed in this notice are subject to the End User License
+	 * Agreement(s) entered into by the website owner. All other parties are 
+	 * explicitly restricted from using the Licensed Webfonts(s).
+	 * 
+	 * You may obtain a valid license at the URLs below.
+	 * 
+	 * Webfont: BebasKai by Flat-it
+	 * URL: http://www.myfonts.com/fonts/flat-it/bebas-kai/regular/
+	 * Copyright: Copyright &#x00A9; 2014 by Ryoichi Tsunekawa. All rights reserved.
+	 * Licensed pageviews: Unlimited
+	 * 
+	 * 
+	 * License: http://www.myfonts.com/viewlicense?type=web&buildid=3273306
+	 * 
+	 * © 2016 MyFonts Inc
+	*/
+
+	-->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/MyFontsWebfontsKit.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/activity.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">	
+	$(document).ready(function(){
+		<%if(login_ck == undefined){%>
+			$('.ceos_login_btn').show();
+			$('.ceos_signup_btn').show();
+		<%} else{%>
+			$('.ceos_logout_btn').show();
+		<%}%>
+	});	
+</script>
+	<!-- jQuery easing plugin -->
+</head>
+<body class='home'>
+	<div class='container'>
+		<div class='top_container'>
+			<div class='user_line'>
+			</div>
+			<div class='logo_line'>
+				<div class='logo_box'>
+					<img src='/images/ceos_logo.png'/>
+				</div>
+				<div class='ceos_user_btn_box'>
+					<div class='ceos_user_btn ceos_signup_btn'>
+					signup
+					</div>
+					<div class='ceos_user_btn ceos_login_btn'>
+					login
+					</div>
+					<div class='ceos_user_btn ceos_logout_btn'>
+					logout
+					</div>
+				</div>
+			</div>
+			<div class='menu_line'>
+				<div class="menu_box">
+					<div class="menu_name menu_about">
+						ABOUT US
+					</div>
+					<div class="menu_name menu_board">
+						BOARD
+					</div>
+					<div class="menu_name menu_mem">
+						MEMBERS
+					</div>
+					<div class="menu_name menu_act active">
+						ACTIVITIES
+					</div>
+					<div class="menu_name menu_rec">
+						RECRUIT
+					</div>
+					<div class="menu_name menu_con">
+						CONTACT
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bottom_container'>
+			<div class='left_col'>
+				<div class='left_menu' id='semester_btn'>
+					<div class='left_eng' style='width: 90px; font-family: BebasKai; font-size: 40px'>
+					2016-2
+					</div>
+					<div class='left_kor'>
+					
+					</div>
+				</div>
+				<div class='left_menu on_page btn_all'>
+					<div class='left_eng' style='width: 30px; font-family: BebasKai; '>
+					All
+					</div>
+					<div class='left_kor'>
+					전체보기
+					</div>
+				</div>
+				<div class='left_menu btn_session'>
+					<div class='left_eng' style='width: 60px; font-family: BebasKai;'>
+					Session
+					</div>
+					<div class='left_kor'>
+					세션 활동
+					</div>
+				</div>
+				<div class='left_menu btn_entertain'>
+					<div class='left_eng' style='width: 80px; font-family: BebasKai;'>
+					Entertain
+					</div>
+					<div class='left_kor'>
+					친목 활동
+					</div>
+				</div>
+				<div class='left_menu btn_networking'>
+					<div class='left_eng' style='width: 90px; font-family: BebasKai;'>
+					Networking
+					</div>
+					<div class='left_kor'>
+					외부 활동
+					</div>
+				</div>
+				<div class='left_menu btn_2016_1' id='semester_btn'>
+					<div class='left_eng' style='width: 90px; font-size: 40px; font-family: BebasKai; '>
+					2016-1
+					</div>
+					<div class='left_kor'>
+					
+					</div>
+				</div>
+			</div>
+			<div class='right_col'>
+				<div class='right_top'>
+					<div class='right_top_name'>
+					ACTIVITIES
+					</div>
+					<div class='right_top_info'>
+					세션 뿐만 아니라 뒷풀이,</br> 외부행사 등 CEOS의 추억 저장고입니다.
+					</div>
+				</div>
+				<div class='right_bot'>
+					<div class='right_bot_container'>
+						<div class='right_bot_line session'>
+							<div class='act_name_line data_session data_all'>
+								<div class='act_name_box'>
+									<div class='act_name_eng'>
+										SESSION
+									</div>
+									<div class='act_name_kor'>
+										정규 세션 활동
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_session data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										2016.09.12 
+									</div>
+									<div class='act_data_name'>
+										신입 기수 OT @신촌
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/1.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/2.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/3.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/4.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/5.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/6.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20160912_OT/7.jpg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_session data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										2016.11.10
+									</div>
+									<div class='act_data_name'>
+										외부초청  세미나 @연대
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/SESSION/20161110_invite_seminar/1.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/20161110_invite_seminar/2.jpg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_session data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										16.10 ~ 16.12 
+									</div>
+									<div class='act_data_name'>
+										웹스터디 @연대
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/SESSION/web_study/1.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/web_study/2.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/web_study/3.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/web_study/4.jpeg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_session data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										16.09 ~ 16.12 
+									</div>
+									<div class='act_data_name'>
+										프로젝트 팀별 아이디어 회의 @신촌
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/SESSION/project_team/1.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/project_team/2.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/project_team/3.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/project_team/4.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/SESSION/project_team/5.jpeg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='right_bot_line entertain'>
+							<div class='act_name_line data_entertain data_all'>
+								<div class='act_name_box'>
+									<div class='act_name_eng'>
+										ENTERTAIN
+									</div>
+									<div class='act_name_kor'>
+										뒷풀이 및 친목 활동	
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_entertain data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										2016.09.24
+									</div>
+									<div class='act_data_name'>
+										후반기 MT @일영 유원지
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/ENTERTAIN/160924_25_MT/1.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/ENTERTAIN/160924_25_MT/2.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_3'>
+											<img src='/images/activity_2017_2/ENTERTAIN/160924_25_MT/3.jpg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_3'>
+											<img src='/images/activity_2017_2/ENTERTAIN/160924_25_MT/4.jpg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_entertain data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										2016.12.01
+									</div>
+									<div class='act_data_name'>
+										세션 뒷풀이 @신촌
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/ENTERTAIN/after_olleh/1.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/ENTERTAIN/after_olleh/2.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_3'>
+											<img src='/images/activity_2017_2/ENTERTAIN/after_olleh/3.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_3'>
+											<img src='/images/activity_2017_2/ENTERTAIN/after_olleh/4.jpeg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_entertain data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										16.10 ~ 16.12
+									</div>
+									<div class='act_data_name'>
+										번개 @
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/ENTERTAIN/jeuk_seok_man_nam/1.jpeg'/>
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_2'>
+											<img src='/images/activity_2017_2/ENTERTAIN/jeuk_seok_man_nam/2.jpeg'/>			
+										</div>
+									</div>
+									<div class='act_data_img_line item_hide'>
+										<div class='act_data_img_box_3'>
+											<img src='/images/activity_2017_2/ENTERTAIN/jeuk_seok_man_nam/3.jpg'/>			
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='right_bot_line data_networking data_all networking'>
+							<div class='act_name_line data_all'>
+								<div class='act_name_box'>
+									<div class='act_name_eng'>
+										NETWORKING
+									</div>
+									<div class='act_name_kor'>
+										외부 활동
+									</div>
+								</div>
+							</div>
+							<div class='act_data_box data_networking data_all inline'>
+								<div class='act_data_name_line'>
+									<div class='act_data_date'>
+										2016.10.12
+									</div>
+									<div class='act_data_name'>
+										비즈니스 플랜 경진대회 본선 @이화여대
+									</div>
+									<div class='act_data_show_btn' onclick='act_data_btn(this)'>
+										<img src='/images/activity_down_btn.png'/>
+									</div>
+								</div>
+								<div class='act_data_img_box'>
+									<div class='act_data_img_line'>
+										<div class='act_data_img_box_1'>
+											<img src='/images/activity_2017_2/NETWORKING/20161012_ehwa_business_plan_competition.jpeg'/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/javascripts/index.js" type="text/javascript"></script>
+	<script src="/javascripts/activity.js" type="text/javascript"></script>
+</body>
+</html>

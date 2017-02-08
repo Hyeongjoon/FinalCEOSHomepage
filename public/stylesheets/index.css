@@ -1,0 +1,264 @@
+/* KoPub Dotum */
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+}
+
+.home{
+	position: relative;
+    margin: 0;
+    font-family:'Nanum Barun Gothic', sans-serif;
+    text-align:center;
+}
+
+
+
+.container{
+    margin: 0 auto;
+    width: 1050px;
+    text-align:center;
+}
+
+.user_line{
+	width:100%;
+	height:40px;
+}
+
+.logo_line{
+	    width: 100%;
+    height: 110px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align:center;
+}
+
+.logo_line .logo_box{
+	    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+.logo_line .logo_box img{
+	width:100%;
+	height:100%;
+}
+
+.menu_line{
+	width:100%;
+	height:30px;
+	border-bottom:1px solid #d6d2d2;
+	text-align:center;
+}
+
+.menu_box{
+	width: 720px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.menu_name{
+	    width: 80px;
+    float: left;
+    height: 28px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: BebasKai;
+}
+
+.menu_name:hover{
+	border-bottom:3px solid #266dc3;
+}
+
+.menu_name.active{
+    border-bottom: 3px solid #266dc3;
+}
+
+.bottom_container{
+	 width: 900px;
+    margin: 75px auto;
+    height: 100%;
+}
+
+.main_top img{
+    width:100%;
+}
+
+.main_center{
+    width:100%;
+    height:310px;
+}
+
+.main_bot img{
+    width:100%;
+}
+
+.left_col{
+	width:205px;
+	float:left;
+}
+.members .left_col{
+    width:145px;
+}
+
+.left_menu{
+	width: 100%;
+    height: 25px;
+    cursor:pointer;
+    margin:10px 0;
+}
+
+.left_menu:hover{
+	border-left:5px solid #266dc3;
+}
+.left_menu.on_page{
+    border-left:5px solid #266dc3;
+}
+.left_menu.on_page .left_kor{
+    display:block;
+}
+
+.left_menu.active{
+	border-left:5px solid #266dc3;
+}
+.left_menu.active .left_kor{
+    display:block;
+}
+
+.left_eng{
+	width: 110px;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+    line-height: 23px;
+    font-family: BebasKai;
+	text-align:left;
+}
+
+.left_kor{
+	    width: 80px;
+    height: 100%;
+    float: left;
+    display: none;
+    font-size: 12px;
+    color: #080808;
+    line-height:30px;
+    text-align:left;
+}
+
+.members .left_kor{
+    width:50px;
+}
+
+.right_col{
+	width:695px;
+	float:left;
+}
+
+.members .right_col{
+    width:755px;
+}
+
+.right_top{
+	    width: 600px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.members .right_top{
+    width:755px;
+}
+
+.right_top_name{
+	    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #266dc3;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 55px;
+    font-family: BebasKai;
+
+}
+
+.right_top_info{
+	width: 240px;
+    height: 30px;
+    float: left;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-weight: 600;
+    /* line-height: 65px; */
+    font-size: 13px;
+    padding: 15px 30px;
+}
+
+.right_top_info_oneline{
+	width: 240px;
+    height: 30px;
+    float: left;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 13px;
+    padding: 15px 30px;
+}
+
+.members .right_top_info{
+    width:257.5px;
+}
+
+
+.right_bot{
+        width: 600px;
+    margin: 50px auto;
+}
+
+.members .right_bot{
+    width:755px;
+}
+a{
+    text-decoration:none;
+}
+.apply_down_btn{
+    cursor:pointer;
+    background-color: #266dc3;
+    color:white;
+        width: 300px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px 0;
+    text-align: center;
+    margin: 30px auto;
+    font-family: BebasKai;
+}
+
+.ceos_user_btn_box{
+	    position: fixed;
+    right: 50px;
+    top: 50px;
+}
+
+.ceos_user_btn{
+	display: none;
+    float: right;
+    font-size: 12px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.ceos_user_btn:hover{
+	font-size:24px;
+}
