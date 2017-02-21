@@ -11,35 +11,35 @@ $(".left_menu").on("mouseout", function(){
 });
 
 $('.logo_box').on('click', function(){
-	location.replace("/"); 
+	location.href = '/'; 
 });
 
 $(".menu_about").on('click', function(){
-	location.replace("/about/philo"); 
+	location.href = '/about/philo'; 
 });
 $(".menu_board").on('click', function(){
-	location.replace("/board/notice"); 
+	location.href = '/board/notice'; 
 });
 $(".menu_mem").on('click', function(){
-	location.replace("/members"); 
+	location.href = '/members'; 
 });
 $(".menu_act").on('click', function(){
-	location.replace("/activity");
+	location.href = '/activity';
 });
 $(".menu_rec").on('click', function(){
-	location.replace("/recruit"); 
+	location.href = '/recruit'; 
 });
 
 $(".menu_con").on('click', function(){
-
+	location.href = '/contact'; 
 });
 
 $('.ceos_login_btn').on('click', function(){
-	location.replace("/login");
+	location.href = '/login';
 });
 
 $('.ceos_signup_btn').on('click', function(){
-	location.replace("/signUp");
+	location.href = '/signUp';
 });
 
 $('.ceos_logout_btn').on('click', function(){

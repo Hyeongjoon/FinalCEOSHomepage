@@ -2,17 +2,17 @@ $(document).ready(function(){
 
 });
 $('.left_menu_philo').on('click', function(){
-	location.replace("/about/philo");    
+	location.href='/about/philo';    
 });
 $('.left_menu_greet').on('click', function(){
-	location.replace("/about/greet");
+	location.href='/about/greet';
 });
 $('.left_menu_his').on('click', function(){
-	location.replace("/about/history");
+	location.href='/about/history';
 });
 $('.left_menu_mento').on('click', function(){
-	location.replace("/about/mentor");
+	location.href='/about/mentor';
 });
 $('.left_menu_manage').on('click', function(){
-	location.replace("/about/manage");
+	location.href='/about/manage';
 });

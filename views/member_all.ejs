@@ -127,6 +127,15 @@
 					3기
 					</div>
 				</div>
+				<div class='left_menu member_menu_4 <%if(order==4){%>
+				on_page<%}%>'>
+					<div class='left_eng' style='width: 85px;'>
+					4th 2016-02
+					</div>
+					<div class='left_kor'>
+					4기
+					</div>
+				</div>
 			</div>
 			<div class='right_col'>
 				<div class='right_top'>
@@ -195,8 +204,8 @@
 								</div>
 								<div class='per_card_onetalk_line'>
 									<%if(result[i].mention !== null){%>
-									<%=result[i].mention%><%}%>
-								</div>
+									<%-result[i].mention%><%}%>
+								</div> 
 								<div class='per_btn_box'>
 									<img src='/images/per_face.png'/>
 									<img src='/images/per_msg.png'/>
@@ -247,7 +256,7 @@
 								</div>
 								<div class='per_card_onetalk_line'>
 									<%if(result[i].mention !== null){%>
-									<%=result[i].mention%><%}%>
+									<%-result[i].mention%><%}%>
 								</div>
 								<div class='per_btn_box'>
 									<img src='/images/per_face.png'/>

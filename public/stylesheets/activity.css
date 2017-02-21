@@ -31,7 +31,12 @@
 }
 
 #semester_btn{
-	height:40px;
+	height:34px;
+}
+
+#semester_btn_2016_1{
+	height:34px;
+	margin-top: 30px;
 }
 
 .act_data_date{
@@ -50,7 +55,7 @@
 }
 
 .act_data_show_btn{
-	    width: 30px;
+	width: 30px;
     height: 30px;
     float: right;
     margin: 10px 0;

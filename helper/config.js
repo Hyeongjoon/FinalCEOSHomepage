@@ -17,13 +17,13 @@ exports.dbSecretKey = 'kominkibabo';
 exports.emailSecretKey = 'audclakwdmffo';
 
 exports.emailConfig = {
-						host : 'smtp.gmail.com' ,
-						port :465,
-						secure : true,
-						auth : {
-								user : 'sendwitch.co@gmail.com',
-								pass : '7557523m'
-							}
-						};
+		host : 'smtp.gmail.com',
+		port :465,
+		secure : true,
+		auth : {
+				user : 'ceos.sinchon@gmail.com',
+				pass : 'tpdhtmtlschs'
+			}
+		};
 
-exports.clubMan = 3; //회장 유저아이디 적으면됨
+exports.clubMan = 4; //회장 유저아이디 적으면됨

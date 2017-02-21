@@ -59,3 +59,18 @@ $('.member_menu_3').on('click', function(){
 	form.submit();
 });
 
+$('.member_menu_4').on('click', function(){
+	var form = document.createElement("form");
+	
+	var input = document.createElement("input");
+	form.setAttribute("method", "get");
+	form.setAttribute("action", "/members");
+	input.type = "hidden";
+	input.name = "order";
+	input.value = 4;
+	form.appendChild(input);
+	
+	document.body.appendChild(form);
+	form.submit();
+});
+

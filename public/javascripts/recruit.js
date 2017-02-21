@@ -1,26 +1,26 @@
 $('.left_menu_recruit').on('click', function(){
-	location.replace("/recruit");    
+	location.href = '/recruit';    
 });
 
 $('.left_menu_apply').on('click', function(){
-	location.replace("/recruit/apply");    
+	location.href = '/recruit/apply';    
 });
 
 
 $('.left_menu_faq').on('click', function(){
-	location.replace("/recruit/faq");    
+	location.href = '/recruit/faq';    
 });
 
 $('.left_menu_qna').on('click', function(){
-	location.replace("/recruit/qna");    
+	location.href = '/recruit/qna';    
 });
 
 $('.qna_make').on('click', function(){
-	location.replace("/recruit/qna/make"); 
+	location.href = '/recruit/qna/make'; 
 });
 
 $('.qna_register').on('click', function(){
-	console.log("여긴오냐?");
+	
 	var form = document.createElement("form");
 		
 		var input = document.createElement("input");
@@ -34,7 +34,10 @@ $('.qna_register').on('click', function(){
 		var input2 = document.createElement("input");
 		input2.type = "hidden";
 		input2.name = "content";
-		input2.value = $('.board_make_text').val();
+		var tmp = $('.board_make_text').val(); 
+		tmp = tmp.replace(/\n/g, '<br/>');
+		tmp = tmp.replace(/\s/g, '&nbsp;');
+		input2.value = tmp;
 		form.appendChild(input2);
 		document.body.appendChild(form);
 		form.submit();
@@ -137,7 +140,10 @@ function qnaReviseRegister(qid){
 	var input3 = document.createElement("input");
 	input3.type = "hidden";
 	input3.name = "content";
-	input3.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input3.value = tmp;
 	form.appendChild(input3);
 	
 	form.appendChild(input);

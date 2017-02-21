@@ -51,8 +51,8 @@ $(".btn_others").on("click", function(){
 	$(".data_others").show();
 });
 $(".btn_2016_2").on("click" , function(){
-	location.replace("/activity"); 
+	location.href = '/activity'; 
 });
 $(".btn_2016_1").on("click" , function(){
-	location.replace("/activity/2016_1"); 
+	location.href = '/activity/2016_1'; 
 });

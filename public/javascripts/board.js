@@ -1,33 +1,33 @@
 $('.left_menu_notice').on('click', function(){
-	location.replace("/board/notice"); 
+	location.href = '/board/notice'; 
 });
 
 $('.left_menu_free').on('click', function(){
-	location.replace("/board/free"); 
+	location.href = '/board/free'; 
 });
 
 $('.left_menu_anony').on('click', function(){
-	location.replace("/board/anony"); 
+	location.href = '/board/anony'; 
 });
 
 $('.left_menu_faq').on('click', function(){
-	location.replace("/board/faq"); 
+	location.href = '/board/faq'; 
 });
 
 $('.left_menu_qna').on('click', function(){
-	location.replace("/board/qna"); 
+	location.href = '/board/qna'; 
 });
 
 $('.anony_make').on('click', function(){
-	location.replace("/board/anony/make"); 
+	location.href = '/board/anony/make'; 
 });
 
 $('.free_make').on('click', function(){
-	location.replace("/board/free/make"); 
+	location.href = '/board/free/make'; 
 });
 
 $('.qna_make').on('click', function(){
-	location.replace("/board/qna/make"); 
+	location.href = '/board/qna/make'; 
 });
 
 $('.anony_register').on('click', function(){
@@ -45,7 +45,10 @@ $('.anony_register').on('click', function(){
 	var input2 = document.createElement("input");
 	input2.type = "hidden";
 	input2.name = "content";
-	input2.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input2.value = tmp;
 	form.appendChild(input2);
 	document.body.appendChild(form);
 	form.submit();
@@ -64,7 +67,10 @@ $('.free_register').on('click', function(){
 		var input2 = document.createElement("input");
 		input2.type = "hidden";
 		input2.name = "content";
-		input2.value = $('.board_make_text').val();
+		var tmp = $('.board_make_text').val(); 
+		tmp = tmp.replace(/\n/g, '<br/>');
+		tmp = tmp.replace(/\s/g, '&nbsp;');
+		input2.value = tmp;
 		form.appendChild(input2);
 		document.body.appendChild(form);
 		form.submit();
@@ -85,14 +91,17 @@ $('.qna_register').on('click', function(){
 		var input2 = document.createElement("input");
 		input2.type = "hidden";
 		input2.name = "content";
-		input2.value = $('.board_make_text').val();
+		var tmp = $('.board_make_text').val(); 
+		tmp = tmp.replace(/\n/g, '<br/>');
+		tmp = tmp.replace(/\s/g, '&nbsp;');
+		input2.value = tmp;
 		form.appendChild(input2);
 		document.body.appendChild(form);
 		form.submit();
 	});
 
 function anonyClick(anid){
-	location.replace("/board/anony/click?anid="+anid); 
+	location.href = '/board/anony/click?anid='+anid; 
 }
 
 function anonyReply(anid){
@@ -156,19 +165,19 @@ function freeReply(bid){
 }
 
 function anonyPage(pageNum){
-	location.replace("/board/anony?pageNum="+pageNum); 
+	location.href = '/board/anony?pageNum='+pageNum; 
 }
 
 function qnaPage(pageNum){
-	location.replace("/board/qna?pageNum="+pageNum); 
+	location.href = '/board/qna?pageNum='+pageNum; 
 }
 
 function qnaClick(qid){
-	location.replace("/board/qna/click?qid="+qid); 
+	location.href = '/board/qna/click?qid='+qid; 
 }
 
 $('.notice_make').on('click', function(){
-	location.replace("/board/notice/make"); 
+	location.href = '/board/notice/make'; 
 });
 
 
@@ -187,26 +196,29 @@ var form = document.createElement("form");
 	var input2 = document.createElement("input");
 	input2.type = "hidden";
 	input2.name = "content";
-	input2.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input2.value = tmp;
 	form.appendChild(input2);
 	document.body.appendChild(form);
 	form.submit();
 });
 
 function noticePage(pageNum){
-	location.replace("/board/notice?pageNum="+pageNum); 
+	location.href = '/board/notice?pageNum='+pageNum; 
 }
 
 function noticeClick(nid){
-	location.replace("/board/notice/click?nid="+nid); 
+	location.href = '/board/notice/click?nid='+nid; 
 }
 
 function freePage(pageNum){
-	location.replace("/board/free?pageNum="+pageNum); 
+	location.href = '/board/free?pageNum='+pageNum; 
 }
 
 function freeClick(bid){
-	location.replace("/board/free/click?bid="+bid); 
+	location.href = '/board/free/click?bid='+bid; 
 }
 
 function freeDeletion(bid){
@@ -389,7 +401,10 @@ function freeReviseRegister(bid){
 	var input3 = document.createElement("input");
 	input3.type = "hidden";
 	input3.name = "content";
-	input3.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input3.value = tmp;
 	form.appendChild(input3);
 	
 	form.appendChild(input);
@@ -426,7 +441,10 @@ function anonyReviseRegister(anid){
 	var input3 = document.createElement("input");
 	input3.type = "hidden";
 	input3.name = "content";
-	input3.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input3.value = tmp;
 	form.appendChild(input3);
 	
 	form.appendChild(input);
@@ -463,7 +481,10 @@ function qnaReviseRegister(qid){
 	var input3 = document.createElement("input");
 	input3.type = "hidden";
 	input3.name = "content";
-	input3.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input3.value = tmp;
 	form.appendChild(input3);
 	
 	form.appendChild(input);
@@ -500,7 +521,10 @@ function noticeReviseRegister(nid){
 	var input3 = document.createElement("input");
 	input3.type = "hidden";
 	input3.name = "content";
-	input3.value = $('.board_make_text').val();
+	var tmp = $('.board_make_text').val(); 
+	tmp = tmp.replace(/\n/g, '<br/>');
+	tmp = tmp.replace(/\s/g, '&nbsp;');
+	input3.value = tmp;
 	form.appendChild(input3);
 	
 	form.appendChild(input);

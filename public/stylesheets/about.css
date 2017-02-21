@@ -151,7 +151,7 @@
 }
 
 .per_card_office_line{
-	    width: 200px;
+	width: 200px;
     margin: 0 auto;
     padding: 25px 0;
 }
@@ -161,13 +161,13 @@
 }
 
 .per_card_onetalk_line{
-        color: white;
+    color: white;
     font-size: 13px;
     font-weight: 500;
     width: 155px;
-    /* margin: 0 auto; */
+    margin: 0 auto; 
     padding: 15px 0px;
-    margin-left: 10px;
+    
 }
 
 .per_card_office_name{
